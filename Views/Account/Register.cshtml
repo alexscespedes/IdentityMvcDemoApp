@@ -1,0 +1,18 @@
+﻿@model IdentityMvcDemoApp.Models.RegisterViewModel
+<h2>Register</h2>
+
+<form action="Register" method="post">
+    <label>Email</label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+
+    <label>Password</label>
+    <input asp-for="Password" type="password"/>
+    <span asp-validation-for="Password"></span>
+
+    <label>Confirm Password</label>
+    <input asp-for="ConfirmPassword" type="password"/>
+    <span asp-validation-for="ConfirmPassword"></span>
+
+    <button type="submit">Register</button>
+</form>
